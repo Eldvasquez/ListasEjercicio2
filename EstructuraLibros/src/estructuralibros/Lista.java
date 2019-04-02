@@ -7,18 +7,31 @@ package estructuralibros;
 
 /**
  *
- * @author alumno
+ * @author Jorge Ivan Vasquez Sosa (0901-16-4067)
+ * 
  */
 public class Lista {
-	private Nodo cabeza=null;
-	private int longitud=0;
-	private class Nodo {
-		public Libro libro;
+    
+    
+	private Nodo cabeza=null; // crea un nodo llamado cabeza que se inicializara como nulo
+	private int longitud=0;  //crea una variable entera llada longitud que sera igual a 0
+	private class Nodo { //crea una clase llamada nodo
+		public Libro libro; //
 		public Nodo siguiente=null;
 		public Nodo(Libro libro) {
 			this.libro=libro;
 		}
 	}
+        public String Listar(){
+            String Dato="";
+            Nodo aux=cabeza;
+            while (aux!=null){
+            Dato+="("+aux.libro.getTitulo()+","+aux.libro.getAutor()+","+aux.libro.getIsbn()+")";
+            aux=aux.siguiente;
+            }        
+          return Dato;  
+        }
+      
 	public void insertarPrincipio(Libro libro) {
 		Nodo nodo=new Nodo(libro);
 		nodo.siguiente=cabeza;

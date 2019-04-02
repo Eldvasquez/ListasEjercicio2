@@ -5,11 +5,16 @@
  */
 package estructuralibros;
 
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
 /**
  *
- * @author alumno
+ * @author Jorge Ivan Vasquez Sosa (0901-16-4067)
  */
 public class Libro {
+    
+    
 	private String titulo;
 	private String autor;
 	private String isbn;
@@ -18,22 +23,32 @@ public class Libro {
 		this.autor=autor;
 		this.isbn=isbn;
 	}
-/*	public String getTitulo() {
-		return titulo;
-	}
-	public String setTitulo() {
-		this.titulo=titulo;
-	}
-	public String getAutor() {
-		return autor;	
-	}
-	public String setAutor() {
-		this.autor=autor;
-	}
-	public String getIsbn() {
-		return isbn;
-	}
-	public String setIsbn() {
-		this.isbn=isbn;
-	}*/
+public static void main (String[] args ){
+
+}
+
+    public String getTitulo() {
+        return titulo;
     }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
+}
+    
